@@ -1,7 +1,7 @@
 #!groovy
-library identifier: '@ansicolor', retriever: modernSCM(
+library identifier: 'JenkinsSharedLibrary@master', retriever: modernSCM(
         [$class: 'GitSCMSource',
-         remote: 'https://github.com/babanjot/bootcamp_2020'])
+         remote: 'https://github.com/JenkinsSharedLibrary'])
 pipeline {
    agent any
     options{
