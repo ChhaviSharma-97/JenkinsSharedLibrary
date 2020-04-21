@@ -1,7 +1,7 @@
 #!groovy
 library identifier: 'JenkinsSharedLibrary@master', retriever: modernSCM(
         [$class: 'GitSCMSource',
-         remote: 'https://github.com/JenkinsSharedLibrary'])
+         remote: 'https://github.com/ChhaviSharma-97/JenkinsSharedLibrary'])
 pipeline {
    agent any
     options{
