@@ -14,9 +14,9 @@ pipeline {
              script{
                     sh ''' docker image ls
                     '''
-                    myscript.info("Successfully Executed")
+                    ansicolor.info("Successfully Executed")
                     def ret = sh(script: 'dockker image ls', returnStatus: true)
-                    myscript.warning(ret)
+                    ansicolor.warning(ret)
              }
          }
       }
@@ -24,7 +24,7 @@ pipeline {
          steps {
               script{
 		    def gitId=sh(script:'git rev-parse HEAD', returnStdout: true)
-                    myscript.gitCommitId(gitId)
+                    ansicolor.gitCommitId(gitId)
              }
          }
       }
